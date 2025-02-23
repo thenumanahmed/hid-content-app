@@ -7,7 +7,7 @@ function Home() {
   const [templates, setTemplates] = useState([]);
   const [selectedTemplate, setSelectedTemplate] = useState(null);
 
-  // Fetch all templates from the backend
+  // Fetch a  ll templates from the backend
   const fetchTemplates = async () => {
     try {
       const res = await axios.get('http://localhost:5000/api/figma');
